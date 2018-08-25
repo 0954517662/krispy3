@@ -25,8 +25,8 @@ KRIS = KRISPoll(cab)
 
 kris = [cab]
 mid = cab.profile.mid
-krisBot=[mid]
-Owner=["u35459f1e84ad208cc56025c259cb1628","u9cc2323f5b84f9df880c33aa9f9e3ae1"]
+krisBot=["u4862fe4b182b2fd194a3108e2f3662e8"]
+Owner=["u4862fe4b182b2fd194a3108e2f3662e8"]
 krisFatner = krisBot + kris + Owner
 
 contact = cab.getProfile()
@@ -36,12 +36,12 @@ backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
 Cyber = {
-    "UnsendPesan":False,
+    "UnsendPesan":True,
     "SpamInvite":False,
     "Contact":False,
-    "GName":"Kris",
-    "MentionText":"Percuma ngetag, aku gak bisa di tikung..!!!\nUdah bosen di modusin mulu..ðﾟﾘﾂðﾟﾘﾃ",
-    "AutoRespon":False,
+    "GName":"【さัএπัஞ✵ບิथℓℓҨतΩ】",
+    "MentionText":"เหมือนมึงเหงา 😌\n\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】",
+    "AutoRespon":True,
     "potoMention":True,
     "KickRespon":False,
     "KillOn":False,
@@ -57,12 +57,12 @@ Cyber = {
     "ContactAdd":{},
     "autoBlock":False,
     "autoJoin":True,
-    "AutojoinTicket":False,
+    "AutojoinTicket":True,
     "AutoReject":False,
     "autoRead":False,
     "IDSticker":False,
     "Timeline":False,
-    "Welcome":False,
+    "Welcome":True,
     "BackupBot":True,
     "WcText": "Welcome",
     "Sider":{},
@@ -82,8 +82,8 @@ Cyber = {
     "Unban":False,
     "AddMention":True,
     "Admin": {
-        "u35459f1e84ad208cc56025c259cb1628":True,  
-        "u9cc2323f5b84f9df880c33aa9f9e3ae1":True
+        "u4862fe4b182b2fd194a3108e2f3662e8":True,  
+        "ue1d6a794435130d139f9c5dde19aa9e5":True
     },
 }
 
@@ -155,13 +155,13 @@ cctv = {
 
 Help ="""
 ╔═════════════
-║CYBER ARMY COMMAND
+║HELP BOT COMMAND
 ╚═════════════
 ╔═════════════
-║ ✰ tɛǟʍ ċʏɮɛʀ-ǟʀʍʏ ɮօt ✰
+║【さัএπัஞ✵ບิथℓℓҨतΩ】
 ╠═════════════
-║ Owner : Kris
-║ line://ti/p/~krissthea
+║ Owner : MAX
+║ line://ti/p/~max_pv
 ╠═════════════
 ║╔════════════
 ║╠❂➣me
@@ -283,7 +283,7 @@ Help ="""
 ║╠❂➣jawa:
 ║╚════════════
 ║     THANKS TO 
-║ Kris Fatner & Team
+║BY:【さัএπัஞ✵ບิथℓℓҨतΩ】
 ╚═════════════
 """
 
@@ -1065,11 +1065,11 @@ def KRIS_FAST_USER(fast):
                         for target in targets:
                             try:
                                 cab.findAndAddContactsByMid(target)
-                                cab.createGroup("SPAM GROUP",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
-                                cab.createGroup("SPAM GROUP",[target]) # HANYA SPAM VIA CONTACT
-                                cab.createGroup("SPAM GROUP",[target])
-                                cab.createGroup("SPAM GROUP",[target])
-                                cab.createGroup("SPAM GROUP",[target])
+                                cab.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target]) # KALAU MAU BUAT BANYAK SILAHKAN TAMBAHIN SESUKA KALIAN :>
+                                cab.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target]) # HANYA SPAM VIA CONTACT
+                                cab.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target])
+                                cab.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target])
+                                cab.createGroup("【さัএπัஞ✵ບิथℓℓҨतΩ】",[target])
                                 cab.sendText(kirim,"Spam Invite ke " + korban + "\nSUCCESS..")
                                 Cyber['SpamInvite'] = False
                             except:             
@@ -1110,12 +1110,12 @@ def KRIS_FAST_USER(fast):
                         elif krisText.lower() == "help":
                             if user in krisFatner or user in Cyber["Admin"]:
                                  cab.sendMessage(kirim, str(Help))
-                                 cab.sendContact(kirim, "u9cc2323f5b84f9df880c33aa9f9e3ae1")
+                                 cab.sendContact(kirim, "u4862fe4b182b2fd194a3108e2f3662e8")
 
                         elif krisText.lower() == "sp":
                             if user in krisFatner or user in Cyber["Admin"]:
                                 no = time.time()
-                                #cab.sendText("u35459f1e84ad208cc56025c259cb1628", ' ')
+                                #cab.sendText("u4862fe4b182b2fd194a3108e2f3662e8", ' ')
                                 elapsed_time = time.time() - no
                                 cab.sendText(kirim, "%s" % (elapsed_time))
 
@@ -1128,7 +1128,7 @@ def KRIS_FAST_USER(fast):
                         elif krisText.lower() == "responsename":
                             if user in krisFatner or user in Cyber["Admin"]:
                                 team1 = cab.getContact(mid).displayName
-                                owner = "u35459f1e84ad208cc56025c259cb1628"
+                                owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                                 cab.mentionWithkris(kirim,owner," Ready On ","" + str(" ("+team1+")"))
 
                         elif krisText.lower() == "my bot":
